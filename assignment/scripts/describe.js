@@ -11,7 +11,6 @@
 // Then we increment the number variable. Number is now 2.
 // We check if number is greater than or equal to 2. 2 is equal to 2, so
 // we console.log 'yes'.
-
 //CODE
 /*
 let number = 1;
@@ -26,8 +25,8 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// youve declared your variable and given it a name of "name" and a value of "dane"
-// conditional states if name is true to be mary then console log Hi mary
+// youve declared your variable and given it a name of "name" and a string value of "dane"
+// the conditional states if name is true to be mary then console log Hi mary
 // else console log how do you do
 //hence the first condition isnt true it goes to the next one. so the console will log "how do you do"
 
@@ -45,11 +44,11 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// youve declared two variables. one with a value and one without
-// conditional states if code is true to be 123 then secrets new value will be "super" and codes will be "code *2"
+// youve declared two variables. one with a string value of 'secret' and one with an integer of 123
+// the conditional states if code is true to the exact value of 123 then secrets new value will be "super" and codes new value will be "code *2"
 // hence this is true the first conditional will apply 
 //the next conditonal states if code is greater than 250 secrets value will become "duper" hence this isnt true it wont apply
-//the only thing in the console will be secret since the log is seperate from the code blocks
+//the console will log the value of secret since the first condition is met, but it will not log 'duper' because the second condtition isnt met 
 
 //CODE
 /*
@@ -71,12 +70,13 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// you have three variables declared all with names and values 
-//conditional states if isStudent is exactly "true" and zip is greater than 80000 console log "youre a student on the west coast"
+// you have three variables declared. one with a boolean of true, and the others with integers of 34 and 55407
+//the conditional states if isStudent is exactly "true" and zip is greater than 80000 console log "youre a student on the west coast"
 // else if isStudent is true to be false or age is less than 30 console log "what are your hobbies" 
 //this will log since age is less than 30
 //else if isStudent is exact to true console log "welcome to prime" this log will overide the other since its next in the code block
 //else if isStudent isnt exact to true console log "how about the weather" this will not log since isStudent is true
+//so, the only thing logged here would be "welcome to prime" since this conditional statment overided the others 
 
 //CODE
 /*
@@ -157,15 +157,13 @@ if (temp > 39 || time >= 4) {
 }
 */
 
-//6. We start with two variables -- age is set to 21 and minAge is set to 21.
-// We check if age is greater than or equal to minAge 
-// -- it is, so we console.log 'enter'.
+//6. We start with two declared variables one is const while the other can change -- age is set to 21 and minAge is set to 21.
+// We check if minAge is less than or equal to age.
+// -- minAge is in fact equal to age so we will console log "no entry"
 //FIX these arent two variables as one of them is a constant
 /*
 let age = 21;
 const minAge = 21;
-//FIX You said you want to check if age is greater than or equal to minAge, but here youre checking if minAge is less than or equal to age
-// it should look like this if(age >= minAge)
 if(minAge <= age) {
   console.log('no entry');
 } else {
